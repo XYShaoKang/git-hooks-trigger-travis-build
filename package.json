@@ -1,0 +1,17 @@
+{
+  "name": "git-hooks-trigger-travis-build",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "./bin/git-hooks-trigger-travis-build",
+  "author": "XYShaoKang",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "get-port": "^5.1.1",
+    "koa": "^2.12.0",
+    "koa-bodyparser": "^4.3.0",
+    "node-fetch": "^2.6.0",
+    "pm2": "^4.4.0",
+    "ssh2": "^0.8.9"
+  }
+}
