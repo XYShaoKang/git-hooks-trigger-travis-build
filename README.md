@@ -2,6 +2,8 @@
 
 > 通过 git hook,触发 Travis-CI 的自定义构建
 
+![git-hooks-trigger-travis-build](https://github.com/XYShaoKang/git-hooks-trigger-travis-build/raw/resources/images/git-hooks-trigger-travis-build.png)
+
 ## 安装
 
 运行需要 node
