@@ -1,6 +1,6 @@
 # 自动触发 Travis-CI 构建
 
-> 通过 git hook,触发 Travis-CI 的自定义构建
+> 通过 git hook,触发 Travis-CI 的自定义构建,[使用场景](./git-hooks-trigger-travis-build.md)
 
 ![git-hooks-trigger-travis-build](https://github.com/XYShaoKang/git-hooks-trigger-travis-build/raw/resources/images/git-hooks-trigger-travis-build.png)
 
@@ -35,8 +35,6 @@ git-hooks-trigger-travis-build -t $token -p $repo -r $remote_host -c $branch
 
 ## 命令选项
 
-## env 文件说明
-
 - `-V, --version` 查看版本
 - `-t, --token <token>` 设置 Travis-CI token
 - `-p, --build-repo <repository>` 触发构建的仓库
@@ -47,5 +45,5 @@ git-hooks-trigger-travis-build -t $token -p $repo -r $remote_host -c $branch
 - `-l, --local-port <port>` 本地服务器的端口 (default: 3000)
 - `-r, --remote-host <host>` 用来自定义 serveo 域名,这样可以保证有一个统一的地址来接收 Github webhook 的通知 (default: "demo")
 - `-u, --serveo-username <username>` 提供给 serveo 的用户名,可以为空 (default: "demo")
-- `-w, --wait-time <time>` 等待 Webhook 的超时时间 (default: 60)
-- -h, --help display help for command
+- `-w, --wait-time <time>` 等待 Webhook 的超时时间,单位 s (default: 60)
+- `-h, --help` display help for command
